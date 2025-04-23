@@ -13,7 +13,13 @@ namespace Vidly
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-
+            routes.MapRoute(
+                name: "MoviesByReleaseDate",
+                url: "movies/released/{year}/{month}",
+                defaults: new { controller = "Movies", action = "ByReleaseDate" },
+                new {year =@"\d{4}", month = @"\d{2}"} // Add Constraint for Number of digits in year and month
+                );
+            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
