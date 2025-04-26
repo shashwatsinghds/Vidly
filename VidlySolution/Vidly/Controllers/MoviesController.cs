@@ -13,15 +13,16 @@ namespace Vidly.Controllers
         public ActionResult Random()
 
         {
-            var movie = new Movie() { Name = "Shrek!" };
-            //return View(movie);
+            var movie = new Movie() { Name = "Shrek!" }; // Anonymous Object
+            return View(movie);
             //return Content("Hello");
             //return HttpNotFound();
-            return RedirectToAction("Index", "Home", new {page=1, sortBy="name"});
+            //return RedirectToAction("Index", "Home", new {page=1, sortBy="name"});
         }
         public ActionResult Edit(int id)
         {
-            return Content("id="+id);
+            //return Content("id="+id);
+            return View();
         }
 
         //movies
@@ -33,7 +34,7 @@ namespace Vidly.Controllers
             }
             if (String.IsNullOrEmpty(sortBy))
             {
-                sortBy = "name";
+                sortBy = "name"; 
             }
 
             return Content(String.Format("pageIndex={0}&sortBy={1}",pageIndex,sortBy));
@@ -48,6 +49,15 @@ namespace Vidly.Controllers
         public ActionResult ByReleaseDate(int year, int month)
         {
             return Content(year + "/" + month);
+        }
+
+
+
+        [Route("movies/lets")]
+        public ActionResult Lets()
+        {
+            //return Content("lets-" + count.ToString());
+            return View();
         }
 
     }
