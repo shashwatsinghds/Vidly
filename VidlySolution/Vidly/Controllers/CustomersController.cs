@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.ModelBinding;
+using System.Web.Mvc;
+using Vidly.Models;
+
+namespace Vidly.Controllers
+{
+    public class CustomersController : Controller
+    {
+        // GET: Customers
+        public ActionResult Index()
+        {
+            var customerList = new List<Customer>()
+            { new Customer { Name = "John Smith", Id = 1},
+            new Customer { Name = "Mary Williams", Id = 2}
+            };
+            return View(customerList);
+        }
+
+        [Route("Customers/Details/{id}")]
+        public ActionResult Details(int id)
+        {
+            List<Customer> customerList = new List<Customer>(){
+            new Customer { Name = "John Smith", Id = 1},
+            new Customer { Name = "Mary Williams", Id = 2}
+            };
+            if (id > 2)
+            {
+                return HttpNotFound();
+            }
+           
+            return View(customerList[id-1]);
+        }
+
+    }
+}
