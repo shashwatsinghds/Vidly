@@ -77,3 +77,9 @@ C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.cspro
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.csproj.Up2Date
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.dll
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.pdb
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.dll
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.SqlServer.dll
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.xml
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.SqlServer.xml
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache

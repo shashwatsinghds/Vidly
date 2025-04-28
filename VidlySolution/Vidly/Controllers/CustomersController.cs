@@ -27,7 +27,7 @@ namespace Vidly.Controllers
             new Customer { Name = "John Smith", Id = 1},
             new Customer { Name = "Mary Williams", Id = 2}
             };
-            if (id > 2)
+            if (id > 2 || id<=0)
             {
                 return HttpNotFound();
             }
