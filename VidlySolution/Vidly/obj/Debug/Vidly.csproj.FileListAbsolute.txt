@@ -83,3 +83,7 @@ C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.x
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\bin\EntityFramework.SqlServer.xml
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedToCustomer.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources

@@ -13,10 +13,7 @@ namespace Vidly.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customerList = new List<Customer>()
-            { new Customer { Name = "John Smith", Id = 1},
-            new Customer { Name = "Mary Williams", Id = 2}
-            };
+            var customerList = GetCustomers();
             return View(customerList);
         }
 
@@ -35,5 +32,12 @@ namespace Vidly.Controllers
             return View(customerList[id-1]);
         }
 
-    }
+        private IEnumerable<Customer> GetCustomers()
+        {
+            return new List<Customer>()
+            { new Customer { Name = "John Smith", Id = 1},
+            new Customer { Name = "Mary Williams", Id = 2}
+            };
+        }
+        }
 }
