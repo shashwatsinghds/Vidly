@@ -1,1 +1,5 @@
 .vs/
+*.mdf
+*.ldf
+App_Data/
+/VidlySolution/Vidly/App_Data/DefaultConnection_log.ldf
