@@ -127,7 +127,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
@@ -166,9 +165,22 @@
     <Compile Include="Migrations\202504300321212_AddedBirthdateToCustomerModel.Designer.cs">
       <DependentUpon>202504300321212_AddedBirthdateToCustomerModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202504300336565_AddedMorePropertiesToMoviesModelAndAddedGenresModel.cs" />
+    <Compile Include="Migrations\202504300336565_AddedMorePropertiesToMoviesModelAndAddedGenresModel.Designer.cs">
+      <DependentUpon>202504300336565_AddedMorePropertiesToMoviesModelAndAddedGenresModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504300341106_AddGenres.cs" />
+    <Compile Include="Migrations\202504300341106_AddGenres.Designer.cs">
+      <DependentUpon>202504300341106_AddGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504300409419_FixGenreRelationship.cs" />
+    <Compile Include="Migrations\202504300409419_FixGenreRelationship.Designer.cs">
+      <DependentUpon>202504300409419_FixGenreRelationship.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genres.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -231,6 +243,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -286,6 +299,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202504300321212_AddedBirthdateToCustomerModel.resx">
       <DependentUpon>202504300321212_AddedBirthdateToCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504300336565_AddedMorePropertiesToMoviesModelAndAddedGenresModel.resx">
+      <DependentUpon>202504300336565_AddedMorePropertiesToMoviesModelAndAddedGenresModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504300341106_AddGenres.resx">
+      <DependentUpon>202504300341106_AddGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504300409419_FixGenreRelationship.resx">
+      <DependentUpon>202504300409419_FixGenreRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

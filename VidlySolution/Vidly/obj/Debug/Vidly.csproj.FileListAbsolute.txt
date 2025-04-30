@@ -90,3 +90,6 @@ C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migra
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddedNameToMembershipType.resources
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.UpdateNamesOndatabaseforMembershipTypes.resources
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddedBirthdateToCustomerModel.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddedMorePropertiesToMoviesModelAndAddedGenresModel.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddGenres.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.FixGenreRelationship.resources
