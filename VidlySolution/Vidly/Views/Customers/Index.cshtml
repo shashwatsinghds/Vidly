@@ -10,12 +10,14 @@
 }
 else
 {
-<table class=“table”>
-    <thead>Movie</thead>
+<table class="table table-bordered table-hover">
+    <th>Movie</th>
+    <th>Discount Rate</th>
     @foreach (var customer in Model)
     {
         <tr>
             <td><a href="/Customers/Details/@customer.Id">@customer.Name</a> </td>
+            <td>@customer.MembershipType.DiscountRate%</td>
         </tr>
     }
 

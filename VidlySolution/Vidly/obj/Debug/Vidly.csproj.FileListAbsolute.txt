@@ -87,3 +87,5 @@ C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migra
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.AddedNameToMembershipType.resources
+C:\Users\ual-laptop\source\repos\Vidly\VidlySolution\Vidly\obj\Debug\Vidly.Migrations.UpdateNamesOndatabaseforMembershipTypes.resources
