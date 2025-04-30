@@ -1,4 +1,7 @@
 ﻿using System.Data.Entity;
+using System.Web.Mvc;
+using Vidly.Models;
+using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace Vidly.Models
 {
@@ -11,4 +14,11 @@ namespace Vidly.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Movie> Movies { get; set; }
     }
-}
+
+   
+    }
+
+
+
+
+

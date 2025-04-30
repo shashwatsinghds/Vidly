@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.ModelBinding;
@@ -16,6 +17,7 @@ namespace Vidly.Controllers
         public CustomersController()
         {
             _context = new ApplicationDbContext();
+
         }
 
         protected override void Dispose(bool disposing)
@@ -24,31 +26,26 @@ namespace Vidly.Controllers
         }
         public ActionResult Index()
         {
-            var customerList = GetCustomers();
+            var customerList = _context.Customers.ToList();
             return View(customerList);
         }
 
         [Route("Customers/Details/{id}")]
         public ActionResult Details(int id)
         {
-            List<Customer> customerList = new List<Customer>(){
-            new Customer { Name = "John Smith", Id = 1},
-            new Customer { Name = "Mary Williams", Id = 2}
-            };
-            if (id > 2 || id<=0)
+            var customer = _context.Customers.SingleOrDefault(x => x.Id == id);
+            if (customer == null)
             {
                 return HttpNotFound();
             }
            
-            return View(customerList[id-1]);
+            return View(customer);
         }
 
-        private IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>()
-            { new Customer { Name = "John Smith", Id = 1},
-            new Customer { Name = "Mary Williams", Id = 2}
-            };
+       
         }
-        }
-}
+  
+   
+
+
+    }
