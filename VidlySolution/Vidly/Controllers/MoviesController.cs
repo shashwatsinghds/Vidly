@@ -97,13 +97,24 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+
         public ActionResult New()
         {
-            MovieFormView movieFormObj = new MovieFormView()
+            MovieFormViewModel movieFormObj = new MovieFormViewModel()
             {
                 Genres = _context.Genres
             };
             return View(movieFormObj);
         }
+
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            movie.DateAdded = DateTime.Now;
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+            return RedirectToAction("Index","Movies");
+        }
+
     }
 }
