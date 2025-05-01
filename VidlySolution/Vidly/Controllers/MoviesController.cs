@@ -97,5 +97,13 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        public ActionResult New()
+        {
+            MovieFormView movieFormObj = new MovieFormView()
+            {
+                Genres = _context.Genres
+            };
+            return View(movieFormObj);
+        }
     }
 }
