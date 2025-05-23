@@ -177,6 +177,10 @@
     <Compile Include="Migrations\202504300409419_FixGenreRelationship.Designer.cs">
       <DependentUpon>202504300409419_FixGenreRelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505051811160_AddedDataAnnotationToName.cs" />
+    <Compile Include="Migrations\202505051811160_AddedDataAnnotationToName.Designer.cs">
+      <DependentUpon>202505051811160_AddedDataAnnotationToName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -313,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202504300409419_FixGenreRelationship.resx">
       <DependentUpon>202504300409419_FixGenreRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505051811160_AddedDataAnnotationToName.resx">
+      <DependentUpon>202505051811160_AddedDataAnnotationToName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
